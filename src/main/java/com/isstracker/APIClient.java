@@ -18,6 +18,7 @@ public class APIClient {
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
 
+            // Use try-with-resources to ensure BufferReader is closed //
             try (BufferedReader inputStream = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
                 String inputLine;
 
