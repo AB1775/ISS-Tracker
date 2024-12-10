@@ -26,15 +26,17 @@ public class CustomWaypointRenderer extends DefaultWaypointRenderer {
             }
     }
     @Override
-    public void paintWaypoint(final Graphics2D g, final JXMapViewer map, final Waypoint w) { // Add Error Handling
+    public void paintWaypoint(final Graphics2D g, final JXMapViewer map, final Waypoint w) {
         if (customIcon == null)
             return;
-
+        // Convert the waypoint's geo-position to pixel coordinates //
         final Point2D point = map.getTileFactory().geoToPixel(w.getPosition(), map.getZoom());
 
+        // Calculate the top-left corner of the icon //
         final int x = (int) point.getX() - customIcon.getWidth() / 2;
         final int y = (int) point.getY() - customIcon.getHeight();
 
+        // Draw the icon at the calculated position //
         g.drawImage(customIcon, x, y, null);
     }
 }
