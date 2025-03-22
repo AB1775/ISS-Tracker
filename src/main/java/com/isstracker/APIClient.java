@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URI;
 
 public class APIClient {
     public static final String apiURL = "http://api.open-notify.org/iss-now.json";
@@ -14,7 +15,7 @@ public class APIClient {
         HttpURLConnection connection = null;
 
         try {
-            final URL url = new URL(apiURL);
+            URL url = URI.create(apiURL).toURL();
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
 
