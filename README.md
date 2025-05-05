@@ -28,8 +28,8 @@ A simple, user-friendly application made in Java using Swing, JXMapViewer2, Nath
 
 #### 3. Clone Repository
 ```bash
-git clone https://github.com/AB1775/Java-ISS-Tracker
-cd /path/to/Java-ISS-Tracker/
+git clone https://github.com/AB1775/ISS-Tracker
+cd /path/to/ISS-Tracker/
 ```
 #### 4. Install Dependencies
 ```bash
@@ -38,7 +38,7 @@ mvn install
 
 #### 5. Run the Application
 ```bash
-java -jar target/Java-ISS-Tracker-main/target/isstracker-1.0-SNAPSHOT-jar-with-dependencies.jar
+java -jar target/ISS-Tracker-main/target/isstracker-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 
 ### Windows Installation
@@ -47,11 +47,11 @@ java -jar target/Java-ISS-Tracker-main/target/isstracker-1.0-SNAPSHOT-jar-with-d
 
 #### 5. Clone Repository
 ```cmd
-git clone https://github.com/AB1775/Java-ISS-Tracker
+git clone https://github.com/AB1775/ISS-Tracker
 ```
 #### 6. Navigate to the Project Directory
 ```cmd
-cd \path\to\Java-ISS-Tracker\
+cd \path\to\ISS-Tracker\
 ```
 #### 7. Build the Project
 ```cmd
