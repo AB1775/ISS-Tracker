@@ -110,7 +110,7 @@ public class SwingGUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    waypoints.removeAll(waypoints);    
+                    waypoints.clear();
                     ResponseParser.ISSDataTemplate updatedISSObject = ResponseParser.populateDataObject();
 
                     messageLabel.setText("      Message: " + updatedISSObject.message);
